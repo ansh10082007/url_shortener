@@ -1,0 +1,5 @@
+CREATE TABLE clicks(
+    id SERIAL PRIMARY KEY,
+    url_id INTEGER REFERENCES urls(id),
+    clicked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
